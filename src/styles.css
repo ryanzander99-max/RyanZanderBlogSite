@@ -177,3 +177,64 @@ footer p {
 .error-page h3 {
     margin-top: 0px;
 }
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    body {
+        margin-top: 10px;
+    }
+
+    .container {
+        width: 90%;
+        padding: 0 15px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    .navbar a {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    .navbar img {
+        height: 16px;
+    }
+
+    .blog li a {
+        padding: 10px 0;
+    }
+
+    .blog .date {
+        font-size: 11px;
+    }
+
+    .article h1 {
+        font-size: 28px;
+    }
+
+    .article h3 {
+        font-size: 14px;
+    }
+
+    .article p {
+        font-size: 14px;
+    }
+
+    .error-page {
+        margin-top: 60px;
+    }
+
+    .error-page h1 {
+        font-size: 80px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,8 @@
+{
+  "buildCommand": "",
+  "outputDirectory": "src",
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "status": 404, "dest": "/404.html" }
+  ]
+}

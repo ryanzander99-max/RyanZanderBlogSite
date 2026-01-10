@@ -37,6 +37,10 @@ body {
     padding-left: 0;
 }
 
+.navbar li:last-child a {
+    padding-right: 0;
+}
+
 .navbar img {
     height: 20px;
     width: auto;
@@ -75,6 +79,44 @@ body {
 .blog li a:hover,
 .blog li a:hover .date {
     color: #ffffff;
+}
+
+.article {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.article h1 {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    margin: 0px;
+}
+
+.article h3 {
+    color: #a3a3a3;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.article a {
+    color: #a3a3a3;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.article a:hover {
+    color: #ffffff;
+}
+
+.article p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
 }
 
 a {
@@ -120,4 +162,18 @@ p, ul li, ul li a {
 footer p {
     text-align: center;
     color: #737373;
+}
+
+.error-page {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.error-page h1 {
+    font-size: 120px;
+    margin-bottom: 0;
+}
+
+.error-page h3 {
+    margin-top: 0px;
 }

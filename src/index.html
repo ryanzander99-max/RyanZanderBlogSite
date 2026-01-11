@@ -15,17 +15,52 @@
             </ul>
         </nav>
         <header>
-            <h1>ryan.zander</h1>
-            <h3>blog of all my projects and hobbies</h3>
+            <h1>zander.projects</h1>
+            <h3>blog of all my current projects and past projects</h3>
         </header>
 
         <section class="blog">
+            <div class="sort-buttons">
+                <button id="sort-date" class="sort-btn active">by date</button>
+                <button id="sort-name" class="sort-btn">by name</button>
+            </div>
             <ul>
-                <li><a href="blogs/webdevelopment.html"><span>web development</span><span class="date">Jan 10, 2026</span></a></li>
-                <li><a href="blogs/sciencefair.html"><span>science fair project</span><span class="date">Jan 8, 2026</span></a></li>
-                <li><a href="blogs/bmxbiking.html"><span>bmx biking</span><span class="date">Jan 5, 2026</span></a></li>
+                <li data-date="2026-01-10" data-name="science fair project"><a href="blogs/sciencefair.html"><span>science fair project</span><span class="date">Jan 10, 2026</span></a></li>
+                <li data-date="2026-01-08" data-name="zander.projects"><a href="blogs/zanderprojects.html"><span>zander.projects</span><span class="date">Jan 8, 2026</span></a></li>
+                <li data-date="2026-01-05" data-name="bmx biking"><a href="blogs/bmxbiking.html"><span>bmx biking</span><span class="date">Jan 5, 2026</span></a></li>
+                <li data-date="2026-01-10" data-name="web development"><a href="blogs/webdevelopment.html"><span>web development</span><span class="date">Jan 10, 2026</span></a></li>
             </ul>
         </section>
+
+        <script>
+            const sortDateBtn = document.getElementById('sort-date');
+            const sortNameBtn = document.getElementById('sort-name');
+            const blogList = document.querySelector('.blog ul');
+
+            function sortPosts(by) {
+                const items = Array.from(blogList.querySelectorAll('li'));
+                items.sort((a, b) => {
+                    if (by === 'date') {
+                        return b.dataset.date.localeCompare(a.dataset.date);
+                    } else {
+                        return a.dataset.name.localeCompare(b.dataset.name);
+                    }
+                });
+                items.forEach(item => blogList.appendChild(item));
+            }
+
+            sortDateBtn.addEventListener('click', () => {
+                sortDateBtn.classList.add('active');
+                sortNameBtn.classList.remove('active');
+                sortPosts('date');
+            });
+
+            sortNameBtn.addEventListener('click', () => {
+                sortNameBtn.classList.add('active');
+                sortDateBtn.classList.remove('active');
+                sortPosts('name');
+            });
+        </script>
 
         <footer>
             <p>&copy; all rights reserved - ryan.zander</p>

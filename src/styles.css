@@ -53,6 +53,34 @@ body {
     filter: brightness(0) invert(1);
 }
 
+.sort-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.sort-btn {
+    background: none;
+    border: 1px solid #737373;
+    color: #737373;
+    padding: 5px 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.sort-btn:hover {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.sort-btn.active {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
 .blog ul {
     list-style: none;
     padding: 0;

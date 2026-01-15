@@ -81,6 +81,36 @@ body {
     border-color: #ffffff;
 }
 
+.theme-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    margin-left: auto;
+}
+
+.theme-btn {
+    background: none;
+    border: 1px solid #737373;
+    color: #737373;
+    padding: 5px 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-left: auto;
+}
+
+.theme-btn:hover {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.theme-btn.active {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
 .blog ul {
     list-style: none;
     padding: 0;

@@ -4,22 +4,7 @@ A personal blog site showcasing projects and hobbies.
 
 ## Live Site
 
-[ryanzander.vercel.app](https://ryanzander.vercel.app)
-
-## Structure
-
-```
-src/
-├── index.html          # Homepage with blog list
-├── 404.html            # Custom 404 error page
-├── styles.css          # Global styles
-├── blogs/              # Blog post pages
-│   ├── webdevelopment.html
-│   ├── sciencefair.html
-│   └── bmxbiking.html
-└── img/                # Images
-    └── removebg.png    # Logo
-```
+[zander.life](https://zander.life)
 
 ## Features
 
